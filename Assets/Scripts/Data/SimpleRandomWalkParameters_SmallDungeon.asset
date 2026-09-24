@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f8708be2aaf79d4e91b3e1568f09278, type: 3}
   m_Name: SimpleRandomWalkParameters_SmallDungeon
   m_EditorClassIdentifier: Assembly-CSharp::SimpleRandomWalkSO
-  iterations: 100
-  walkLength: 100
+  iterations: 10
+  walkLength: 10
   startRandomlyEachIteration: 0
