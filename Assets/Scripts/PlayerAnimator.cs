@@ -23,9 +23,4 @@ public class PlayerAnimator : MonoBehaviour
         am.SetFloat("Speed", pm.moveDirection.magnitude);
 
     }
-
-    void SpriteDirectionChecker()
-    {
-    
-    }
 }
