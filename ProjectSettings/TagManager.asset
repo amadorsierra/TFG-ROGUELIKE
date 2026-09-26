@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Wall
+  - Enemy
+  - Chest
   layers:
   - Default
   - TransparentFX
@@ -44,8 +47,14 @@ TagManager:
   - name: Suelo
     uniqueID: 2065100715
     locked: 0
+  - name: Paredes
+    uniqueID: 3055740909
+    locked: 0
   - name: Personajes
     uniqueID: 2560565165
+    locked: 0
+  - name: Projectiles
+    uniqueID: 3018323659
     locked: 0
   m_RenderingLayers:
   - Default

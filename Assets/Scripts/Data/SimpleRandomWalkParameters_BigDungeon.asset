@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SimpleRandomWalkParameters_BigDungeon
   m_EditorClassIdentifier: Assembly-CSharp::SimpleRandomWalkSO
   iterations: 100
-  walkLength: 100
+  walkLength: 40
   startRandomlyEachIteration: 0

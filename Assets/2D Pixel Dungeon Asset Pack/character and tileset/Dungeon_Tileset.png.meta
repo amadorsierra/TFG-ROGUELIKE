@@ -97,7 +97,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -137,7 +137,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -162,7 +162,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dungeon_Tileset_0
+      name: Dungeon_Wall_TL
       rect:
         serializedVersion: 2
         x: 0
@@ -184,7 +184,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon_Tileset_1
+      name: Dungeon_Wall_TM
       rect:
         serializedVersion: 2
         x: 16
@@ -272,7 +272,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon_Tileset_5
+      name: Dungeon_Wall_TR
       rect:
         serializedVersion: 2
         x: 80
@@ -382,7 +382,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon_Tileset_10
+      name: Dungeon_Wall_ML
       rect:
         serializedVersion: 2
         x: 0
@@ -492,7 +492,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon_Tileset_15
+      name: Dungeon_Wall_RM
       rect:
         serializedVersion: 2
         x: 80
@@ -1042,7 +1042,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon_Tileset_40
+      name: Dungeon_Wall_BL
       rect:
         serializedVersion: 2
         x: 0
@@ -1064,7 +1064,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon_Tileset_41
+      name: Dungeon_Wall_B
       rect:
         serializedVersion: 2
         x: 16
@@ -1152,7 +1152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dungeon_Tileset_45
+      name: Dungeon_Wall_BR
       rect:
         serializedVersion: 2
         x: 80
@@ -2377,14 +2377,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Dungeon_Tileset_0: -3786115476455808955
-      Dungeon_Tileset_1: -3590207636862898149
-      Dungeon_Tileset_10: -8474740879727053552
       Dungeon_Tileset_11: 4521207776522067839
       Dungeon_Tileset_12: 1558959487191823921
       Dungeon_Tileset_13: 595508747133529673
       Dungeon_Tileset_14: -1474506998622769691
-      Dungeon_Tileset_15: -3624728776038038798
       Dungeon_Tileset_16: -7606234629451901924
       Dungeon_Tileset_17: -7657094741939605724
       Dungeon_Tileset_18: -9000362276992120081
@@ -2412,17 +2408,13 @@ TextureImporter:
       Dungeon_Tileset_38: -239144592
       Dungeon_Tileset_39: 632580643
       Dungeon_Tileset_4: 5094737752361063794
-      Dungeon_Tileset_40: -57165905
-      Dungeon_Tileset_41: 1981061660
       Dungeon_Tileset_42: -289605466
       Dungeon_Tileset_43: 338857398
       Dungeon_Tileset_44: -578378447
-      Dungeon_Tileset_45: 877697411
       Dungeon_Tileset_46: -915323205
       Dungeon_Tileset_47: -656821492
       Dungeon_Tileset_48: -1809402345
       Dungeon_Tileset_49: -158114825
-      Dungeon_Tileset_5: 4023018930920339469
       Dungeon_Tileset_50: -1248089155
       Dungeon_Tileset_51: 1563765183
       Dungeon_Tileset_52: 962613304
@@ -2477,6 +2469,14 @@ TextureImporter:
       Dungeon_Tileset_97: -1985882050
       Dungeon_Tileset_98: -1907544215
       Dungeon_Tileset_99: -460779891
+      Dungeon_Wall_B: 1981061660
+      Dungeon_Wall_BL: -57165905
+      Dungeon_Wall_BR: 877697411
+      Dungeon_Wall_ML: -8474740879727053552
+      Dungeon_Wall_RM: -3624728776038038798
+      Dungeon_Wall_TL: -3786115476455808955
+      Dungeon_Wall_TM: -3590207636862898149
+      Dungeon_Wall_TR: 4023018930920339469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
