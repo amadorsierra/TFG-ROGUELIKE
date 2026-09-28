@@ -41,20 +41,4 @@ public class PlayerMovement : MonoBehaviour
       
     }
 
-
-    private void OnEnable()
-    {
-        attack.action.started += Attack;
-    }
-
-    private void OnDisable()
-    {
-        attack.action.started -= Attack;
-    }
-
-    private void Attack(InputAction.CallbackContext obj)
-    {
-        Debug.Log("AL ATAQUEEEEE");
-    }
-
 }

@@ -5,14 +5,8 @@ using UnityEngine.InputSystem;
 public class WeaponController : MonoBehaviour
 {
 
-    [Header("Weapon Stats")]
-    public GameObject weaponPrefab;
-    public float damage;
-    public float fireRate = 0.5f;
-    public float projectileSpeed;
-    public float range = 5f;
-    public int pierce;
-    // Variable interna para controlar cuándo se puede volver a disparar
+    [Header("Datos del Arma")]
+    public WeaponDataSO weaponData;
     protected float nextFireTime = 0f;
     protected PlayerMovement playerMovement;
 
@@ -28,13 +22,11 @@ public class WeaponController : MonoBehaviour
         {
             if (Time.time >= nextFireTime)
             {
-                nextFireTime = Time.time + fireRate;
+                nextFireTime = Time.time + weaponData.attackCooldown;
                 Attack();
             }
         }
     }
-
-    protected virtual void Attack()
-    {
-    }
+    
+    protected virtual void Attack() { }
 }

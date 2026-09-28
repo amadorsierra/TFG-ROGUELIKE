@@ -6,18 +6,31 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
     protected Vector3 direction;
     protected float speed;
     protected float range;
+    protected float damage;
     protected Vector3 startPosition; // Para saber de donde se lanzó el proyectil
 
     // Configura el arma
-    public virtual void Setup(Vector3 newDirection, float newSpeed, float newRange)
+    public virtual void Setup(Vector3 direction, float speed, float range, float damage)
     {
-        direction = newDirection;
-        speed = newSpeed;
-        range = newRange;
+        this.direction = direction;
+        this.speed = speed;
+        this.range = range;
+        this.damage = damage;
         startPosition = transform.position;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
+    }
+
+    // Limitamos el rango de proyectiles
+    protected virtual void Update()
+    {
+        transform.position += speed * Time.deltaTime * direction;
+
+        if (Vector3.Distance(startPosition, transform.position) >= range)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Este método de Unity se ejecuta automáticamente cuando choca con otro Trigger
@@ -31,13 +44,14 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
 
         if (collision.CompareTag("Enemy"))
         {
-            // Opcional: Aquí más adelante le restaremos vida al enemigo
-            
-            // Destruimos el hueso al impactar
+            EnemyHealth enemy = collision.GetComponent<EnemyHealth>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(Mathf.RoundToInt(damage));
+            }
+
+            // Destruimos el proyectil al impactar
             Destroy(gameObject);
-            
-            // Destruimos al enemigo temporalmente para probar
-            Destroy(collision.gameObject);
         }
     }
 

@@ -7,9 +7,13 @@ public class BoneController : WeaponController
         Vector2 shootDirection = playerMovement.fireDirection;
         
         // Instanciamos el hueso
-        GameObject spawnedBone = Instantiate(weaponPrefab, transform.position, Quaternion.identity);
+        GameObject spawnedBone = Instantiate(weaponData.weaponPrefab, transform.position, Quaternion.identity);
 
         // Inyectamos todos los datos necesarios (Dirección y Velocidad)
-        spawnedBone.GetComponent<BoneBehaviour>().Setup(shootDirection, projectileSpeed, range);
+        spawnedBone.GetComponent<ProjectileWeaponBehaviour>().Setup(
+            shootDirection, 
+            weaponData.projectileSpeed, 
+            weaponData.range,
+            weaponData.damage);
     }
 }

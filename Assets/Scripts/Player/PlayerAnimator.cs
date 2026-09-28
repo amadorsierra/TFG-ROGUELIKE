@@ -21,6 +21,5 @@ public class PlayerAnimator : MonoBehaviour
         am.SetFloat("Horizontal", pm.moveDirection.x);
         am.SetFloat("Vertical", pm.moveDirection.y);
         am.SetFloat("Speed", pm.moveDirection.magnitude);
-
     }
 }
